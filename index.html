@@ -4,39 +4,233 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Flower-Market</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <section class="Navbar">
-      <div class="logo"></div>
+      <div class="logo">
+        <img src="assets/logo.png" alt="logo" />
+      </div>
       <div class="menu">
-        <div class="menu-items"></div>
-        <div class="cart"></div>
+        <div class="menu-items">
+          <ul>
+            <a href="#"><li>Home</li></a>
+            <a href="#"><li>Shop</li></a>
+            <a href="#"><li>About Us</li></a>
+          </ul>
+        </div>
+        <div class="cart">
+          <img src="assets/shopping-cart.png" alt="cart-icon" />
+          <span>Cart ($56)</span>
+        </div>
       </div>
     </section>
     <section class="Banner">
-      <div class="title-para"></div>
-      <div class="banner-image"></div>
+      <div class="title-para">
+        <h1>Always <span>Fresh Flower</span></h1>
+        <p>
+          Indulge your senses with the beauty and fragrance of our fresh flower
+          shop. From classic roses to exotic blooms, we offer a wide variety of
+          fresh flowers that are perfect for any occasion.
+        </p>
+      </div>
+      <div class="banner-image">
+        <img src="assets/hero-flower.png" alt="Flower-image" />
+      </div>
     </section>
-    <section class="Plants-section">
-      <div class="title-subtitle"></div>
-      <div class="plants-card"></div>
+    <section class="plant-section">
+      <h2><span>Our</span> Plants</h2>
+      <p>Choose from our wide range of healthy green companions.</p>
+
+      <div class="plant-grid">
+        <!-- 8 Cards -->
+        <div class="card">
+          <img src="assets/sample-flower-image.png" alt="Plant 1" />
+          <h3>Money Plant</h3>
+          <p>10 USD</p>
+          <button>Add to Cart</button>
+        </div>
+
+        <div class="card">
+          <img src="assets/sample-flower-image.png" alt="Plant 2" />
+          <h3>Snake Plant</h3>
+          <p>12 USD</p>
+          <button>Add to Cart</button>
+        </div>
+
+        <div class="card">
+          <img src="assets/sample-flower-image.png" alt="Plant 3" />
+          <h3>Aloe Vera</h3>
+          <p>20 USD</p>
+          <button>Add to Cart</button>
+        </div>
+
+        <div class="card">
+          <img src="assets/sample-flower-image.png" alt="Plant 4" />
+          <h3>Peace Lily</h3>
+          <p>15 USD</p>
+          <button>Add to Cart</button>
+        </div>
+
+        <div class="card">
+          <img src="assets/sample-flower-image.png" alt="Plant 5" />
+          <h3>Spider Plant</h3>
+          <p>9 USD</p>
+          <button>Add to Cart</button>
+        </div>
+
+        <div class="card">
+          <img src="assets/sample-flower-image.png" alt="Plant 6" />
+          <h3>Areca Palm</h3>
+          <p>18 USD</p>
+          <button>Add to Cart</button>
+        </div>
+
+        <div class="card">
+          <img src="assets/sample-flower-image.png" alt="Plant 7" />
+          <h3>Rubber Plant</h3>
+          <p>20 USD</p>
+          <button>Add to Cart</button>
+        </div>
+
+        <div class="card">
+          <img src="assets/sample-flower-image.png" alt="Plant 8" />
+          <h3>ZZ Plant</h3>
+          <p>14 USD</p>
+          <button>Add to Cart</button>
+        </div>
+      </div>
     </section>
+
     <section class="Plants-lover-section">
-      <div class="lover-image"></div>
-      <div class="title-ul"></div>
+      <div class="image-container">
+        <img src="assets/flower-store.png" alt="Flower Shop" class="hero-img" />
+        <img
+          src="assets/trusted-badge.png"
+          alt="Trusted Seller Badge"
+          class="badge"
+        />
+        <img
+          src="assets/trusted-badge.png"
+          alt="Trusted Seller Badge"
+          class="shadow"
+        />
+      </div>
+      <div class="text-content">
+        <h1>Flower & Plants Lover</h1>
+        <ul>
+          <li>
+            Indulge your senses with the beauty and fragrance of our fresh
+            flower shop. From classic roses to exotic blooms, we offer a wide
+            variety of fresh.
+          </li>
+          <li>
+            Indulge your senses with the beauty and fragrance of our fresh
+            flower shop. From classic roses to exotic blooms, we offer a wide
+            variety of fresh.
+          </li>
+          <li>
+            Indulge your senses with the beauty and fragrance of our fresh
+            flower shop. From classic roses to exotic blooms, we offer a wide
+            variety of fresh.
+          </li>
+        </ul>
+      </div>
     </section>
-    <section class="Latest-deal-section">
-      <div class="title-subtitle"></div>
-      <div class="card-layout"></div>
+    <section class="deals-section">
+      <div class="deals-header">
+        <h1><span class="highlight">Latest</span> Deals</h1>
+        <p>
+          Indulge your senses with the beauty and fragrance of our fresh flower
+          shop. From classic roses to exotic blooms, we offer a wide variety of
+          fresh.
+        </p>
+      </div>
+      <div class="deals-grid">
+        <div class="deals-left">
+          <div
+            class="deal-card small"
+            style="
+              background-image: url('https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=600&q=80');
+            "
+          >
+            <div class="deal-content">
+              <div class="deal-title">60% Off | Bloom Plant</div>
+              <a href="#" class="shop-btn">Shop Now</a>
+            </div>
+          </div>
+          <div
+            class="deal-card small"
+            style="
+              background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80');
+            "
+          >
+            <div class="deal-content">
+              <div class="deal-title">30% Off | Ana Plant</div>
+              <a href="#" class="shop-btn">Shop Now</a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="deal-card large"
+          style="
+            background-image: url('https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=900&q=80');
+          "
+        >
+          <div class="deal-content">
+            <div class="deal-title">25% Off | Zabo Plant</div>
+            <a href="#" class="shop-btn">Shop Now</a>
+          </div>
+        </div>
+      </div>
     </section>
-    <section class="Join-section">
-      <div class="join-title"></div>
-      <div class="subscribe-email"></div>
+    <section class="subscribe-section">
+      <div class="subscribe-content">
+        <h1>Join the colorful Bunch</h1>
+        <form class="subscribe-form">
+          <input type="email" placeholder="Write email" required />
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
     </section>
-    <section class="Footer">
-      <div class="logo-subtitle"></div>
-      <div class="footer-menu"></div>
-      <div class="footer-icon"></div>
-    </section>
+    <footer class="footer">
+      <div class="footer-logo-desc">
+        <img src="assets/logo.png" alt="Logo" class="footer-logo" />
+        <p class="footer-desc">
+          Indulge your senses with the beauty and fragrance of our fresh flower
+          shop.
+        </p>
+      </div>
+      <div class="footer-links">
+        <ul>
+          <li>Home</li>
+          <li>About Us</li>
+          <li>Blog</li>
+          <li>FAQ</li>
+          <li>Contact Us</li>
+        </ul>
+        <ul>
+          <li>Features</li>
+          <li>Pricing</li>
+          <li>Privacy Policy</li>
+          <li>Terms of Service</li>
+          <li>Help Center</li>
+        </ul>
+      </div>
+      <div class="footer-social">
+        <a href="#" class="social linkedin" aria-label="LinkedIn">
+          <img src="assets/icon-linkedin.png" alt="linkedin" />
+        </a>
+        <a href="#" class="social x" aria-label="X">
+          <img src="assets/icon-twitter.png" alt="twitter" />
+        </a>
+        <a href="#" class="social facebook" aria-label="Facebook">
+          <img src="assets/icon-facebook.png" alt="facebook" />
+        </a>
+        <a href="#" class="social youtube" aria-label="YouTube">
+          <img src="assets/icon-youtube.png" alt="youtube" />
+        </a>
+      </div>
+    </footer>
   </body>
 </html>
