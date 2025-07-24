@@ -157,13 +157,6 @@ ul a :hover {
   background-color: #2563eb;
 }
 
-/* Mobile responsive (2 columns on small screens) */
-@media (max-width: 768px) {
-  .plant-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
 .Plants-lover-section {
   display: flex;
   max-width: 1140px;
@@ -548,6 +541,10 @@ ul a :hover {
   .Banner img {
     max-height: 245px;
     max-width: 394px;
+  }
+
+  .plant-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .footer {
