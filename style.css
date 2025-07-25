@@ -6,7 +6,6 @@
 }
 
 /* Common CSS */
-
 :root {
   --primary-color: #e95a08;
   --dark2: #00000083;
@@ -75,6 +74,7 @@ ul a :hover {
   color: #111111;
 }
 
+/* Banner Section */
 .Banner {
   margin: 120px auto;
   max-width: 1140px;
@@ -88,6 +88,7 @@ ul a :hover {
   font-weight: bold;
 }
 
+/* Plants card section */
 .plant-section {
   max-width: 1140px;
   margin: auto;
@@ -157,10 +158,12 @@ ul a :hover {
   background-color: #2563eb;
 }
 
+/* Plants Lover section */
 .Plants-lover-section {
   display: flex;
   max-width: 1140px;
-  margin: 210px auto;
+  margin: 120px auto;
+  margin-top: 210px;
   background: white;
   border-radius: 8px;
   position: relative;
@@ -239,13 +242,13 @@ ul a :hover {
 }
 
 .deals-header .highlight {
-  color: #f57c1f;
+  color: var(--primary-color);
   font-weight: 800;
 }
 
 .deals-header p {
-  color: #888;
-  font-size: 1.2rem;
+  color: var(--dark2);
+  font-size: 24px;
   max-width: 700px;
   margin: 0 auto;
   line-height: 1.5;
@@ -297,7 +300,8 @@ ul a :hover {
   );
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: center;
 }
 
 .deal-title {
@@ -307,10 +311,23 @@ ul a :hover {
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
 }
 
+.title-1 {
+  font-size: 20px;
+}
+.btn-1 {
+  font-size: 16px;
+}
+
+.title-2 {
+  font-size: 40px;
+}
+.btn-2 {
+  font-size: 28px;
+}
+
 .shop-btn {
   display: inline-block;
   color: #fff;
-  background: rgba(0, 0, 0, 0.25);
   border: none;
   font-weight: 700;
   font-size: 1.1rem;
@@ -322,36 +339,8 @@ ul a :hover {
 }
 .shop-btn:hover {
   background: #fff;
-  color: #f57c1f;
+  color: var(--primary-color);
   text-decoration: none;
-}
-
-@media (max-width: 900px) {
-  .deals-grid {
-    grid-template-columns: 1fr;
-    gap: 24px;
-  }
-  .deal-card.large {
-    min-height: 220px;
-  }
-}
-
-@media (max-width: 600px) {
-  .deals-header h1 {
-    font-size: 2rem;
-  }
-  .deal-title {
-    font-size: 1.2rem;
-  }
-  .deal-card,
-  .deal-card.small,
-  .deal-card.large {
-    min-height: 160px;
-    height: auto;
-  }
-  .deal-content {
-    padding: 18px;
-  }
 }
 
 /* Join-section */
@@ -425,29 +414,7 @@ ul a :hover {
   background: #d65c00;
 }
 
-@media (max-width: 700px) {
-  .subscribe-content h1 {
-    font-size: 2rem;
-    margin-bottom: 24px;
-  }
-  .subscribe-form {
-    flex-direction: column;
-    max-width: 90vw;
-  }
-  .subscribe-form input[type="email"],
-  .subscribe-form button {
-    width: 100%;
-    font-size: 1rem;
-    padding: 16px;
-    box-sizing: border-box;
-  }
-  .subscribe-form button {
-    border-radius: 0 0 4px 4px;
-    padding: 16px 0;
-  }
-}
-
-/* Footer */
+/* Footer section */
 .footer {
   display: grid;
   grid-template-columns: 1.5fr 2fr 1fr;
@@ -470,7 +437,7 @@ ul a :hover {
 }
 
 .footer-desc {
-  color: #888;
+  color: var(--dark2);
   font-size: 1.6rem;
   max-width: 320px;
   line-height: 1.2;
@@ -520,7 +487,7 @@ ul a :hover {
 }
 
 /* Responsive for Mobile device */
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   .Navbar .menu-items {
     display: none;
   }
@@ -528,6 +495,11 @@ ul a :hover {
   .logo img {
     width: 63px;
     height: 38px;
+  }
+
+  p {
+    color: var(--dark2);
+    font-size: 14px;
   }
 
   .cart img {
@@ -540,20 +512,199 @@ ul a :hover {
 
   .Banner img {
     max-height: 245px;
-    max-width: 394px;
+    max-width: 100%;
+  }
+
+  .Banner h1 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .Banner p {
+    max-width: 360px;
   }
 
   .plant-grid {
     grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 30px;
+  }
+
+  .plant-section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .plant-section p {
+    margin-bottom: 30px;
+  }
+
+  .card {
+    margin: 0 auto;
+    max-width: 172px;
+    max-height: 340px;
+  }
+
+  .card img {
+    width: 100%;
+    height: 197px;
+    /* object-fit: cover; */
+    border-radius: 5px;
+  }
+
+  .card h3 {
+    margin: 10px 0 5px;
+    font-size: 16px;
+  }
+
+  .card p {
+    margin-bottom: 16px;
+  }
+
+  .card button {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .Plants-lover-section {
+    flex-direction: column;
+    max-width: 360px;
+    margin: 40px auto;
+    background: white;
+    border-radius: 8px;
+    position: relative;
+    gap: 10px;
+  }
+
+  .image-container {
+    position: relative;
+    flex: 1;
+    height: 396px;
+  }
+
+  .hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .badge {
+    position: absolute;
+    display: none;
+  }
+
+  .shadow {
+    position: absolute;
+    display: none;
+  }
+
+  .text-content {
+    flex: 1;
+    padding: 10px;
+  }
+
+  .text-content h1 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+
+  .text-content ul {
+    list-style: disc;
+    padding-left: 15px;
+    color: var(--dark2);
+    line-height: 1.4;
+    font-size: 14px;
+  }
+
+  .deals-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .deal-card.large {
+    min-height: 220px;
+  }
+
+  .deals-header h1 {
+    font-size: 24px;
+  }
+  .deals-header p {
+    font-size: 14px;
+  }
+  .deal-title {
+    font-size: 20px;
+  }
+  .deal-card,
+  .deal-card.small,
+  .deal-card.large {
+    height: auto;
+  }
+  .deal-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .shop-btn {
+    display: inline-block;
+    color: #fff;
+    border: none;
+    font-weight: 700;
+    font-size: 16px;
+  }
+
+  .subscribe-section {
+    margin: 60px auto;
+    min-height: 275px;
+  }
+
+  .subscribe-content h1 {
+    font-size: 20px;
+    margin-bottom: 24px;
+  }
+  .subscribe-form {
+    max-width: 90vw;
+  }
+  .subscribe-form input[type="email"],
+  .subscribe-form button {
+    width: 30%;
+    font-size: 16px;
+    padding: 16px;
+    box-sizing: border-box;
+  }
+  .subscribe-form button {
+    padding: 20px 8px;
   }
 
   .footer {
     grid-template-columns: 1fr;
-    gap: 32px;
+    gap: 20px;
     text-align: left;
     padding: 32px 4vw 24px 4vw;
   }
   .footer-logo-desc {
     align-items: flex-start;
+  }
+
+  .footer-logo-desc img {
+    max-width: 180px;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer-links ul li {
+    font-size: 16px;
+  }
+
+  .footer-desc {
+    font-size: 16px;
+  }
+
+  .footer-social {
+    justify-content: flex-start;
+    margin-top: 1px;
   }
 }
